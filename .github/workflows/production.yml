@@ -26,7 +26,7 @@ jobs:
           
       - name: Run tests with Pytest
         run: pytest
-        
+
   build-and-push-docker:
     needs: test
     runs-on: ubuntu-latest
@@ -47,5 +47,5 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: AkhilPendekanti/devops_demo:latest
+          tags: vp679/devops_demo:latest
           # Add other relevant build parameters here
